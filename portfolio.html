@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+  <style>
+    .name {
+      font-size: 75px;
+      color: rgba(67, 67, 156, 0.934);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    img {
+      border-radius: 50%;
+      height: 300px;
+      width: 300px;
+      text-align: right;
+
+    }
+
+  header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: aqua;
+      padding: 10px 0;
+      padding: auto;
+      z-index: 1000;
+  }
+  body {
+      padding-top: 60px;
+  }
+
+    a {
+      color: black;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: inherit;
+      text-decoration: none;
+      text-align: center;
+      
+    }
+
+    a:hover {
+      
+      justify-content: space-between;
+      background-color: cornflowerblue;
+      border-radius: 5px;
+      width: 4em;
+      height: auto;
+      padding: 10px;
+      transition: 0.5s;
+      color:white;
+      font-weight: 20vh;
+    }
+
+    .raw {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: rgb(63, 121, 102);
+      background-color: rgb(255, 255, 255);
+      padding: 40px;
+      flex-wrap: wrap;
+    }
+
+    article {
+      font-size: 25px;
+      font-style: oblique;
+    }
+
+    #myjob {
+      align-items: center;
+      box-shadow: 3px 3px 20px rgb(30, 30, 30);
+      margin-left: 4em;
+      border-radius: 0 12px 0;
+    }
+
+    #myjob:hover {
+      background-color: rgb(67, 120, 53);
+      box-shadow: 0, 2px, 3px;
+      border-radius: 12px;
+      transition: 1s;
+
+    }
+
+    #myjob:active {
+      background-color: darkgreen;
+      border-radius: 12px;
+    }
+
+    #par {
+      font: optional;
+      font-size: 20px;
+    }
+
+    footer {
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(48, 46, 46);
+      color: aliceblue;
+      text-decoration: none;
+
+    }
+
+    .img2 {
+      display: flex;
+      width: 50px;
+      height: 50px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px;
+      transition: 2s;
+    }
+
+    .container {
+      background-color: aliceblue;
+      padding: -30px;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      justify-content: space-around;
+    }
+
+    .container:hover {
+      background-color: cornsilk;
+      outline: none;
+      text-decoration: none;
+
+    }
+
+    .container1 {
+      display: grid;
+      background-color: aliceblue;
+      padding: 20px;
+      gap: 10px;
+      font-size: larger;
+      border-radius: 30vb;
+    }
+
+    .num {
+
+      align-items: end;
+      margin-left: 100vh;
+      width: 12vh;
+      height: 10vh;
+    }
+
+    .text {
+      font-size: larger;
+    }
+
+    form {
+      display: grid;
+      justify-content: center;
+      background-color: linear-gradient(to right, rgb(30, 30, 30), rgb(35, 73, 110));
+
+
+
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      background-color: #eee;
+      border-radius: 7px;
+      border: none;
+      font-size: 16px;
+      color: black;
+      margin-bottom: 10px;
+      ;
+    }
+
+    .contact {
+      background-image: url("munna.jpg");
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+
+    <h1><span style="color:rgb(168, 62, 83)">S</span>andeep</h1>
+    <a href="portfolio.html">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="skills.html">Skills</a>
+    <button onclick="toggleTheme()" style="position: fixed; top: 20px; right: 20px; margin-top: 25px;">🌓 </button>
+
+
+  </header>
+  <div class="raw">
+    <div class="text">
+      <h1 style="color:rgb(194, 117, 133)">Hello , my name is </h1>
+      <h1 class="name">Sandeep Kumar</h1>
+      
+      <article>
+        
+        <p>I'm a frontend developer,designer and cyber security enthusiast with a passion for creating
+          morden<br>responsive and user-friendly web application </p>
+          <button id="myjob" onclick="window.location.href='mailto:sandeepgajam7@gmail.com'">hire me</button>
+          
+          <button id="myjob" onclick="window.location.href='projects.html'">view my projects</button>
+          
+        </div>
+      </article>
+      <div>
+        <img src="sandeep.jpeg" alt="my self">
+      </div>
+      <p id="par"> I am pursuing my graduation in malla reddy university,<br>from my childhood i wanted to become a
+        software engineer doing
+        this is a basic html and css portfolio of mine,<br>i have used lots of thing and all the css properties which i
+        have learned.<br>
+        <br>I have won a hackathon in the,open inovation using cyber security honey comb method which i have done frontend
+        part of the application using the react vite. <br>
+        in the hacksavy25 cunducted by the mahathma gandhi institute of technology in the february 2025 <br>
+        <br> i am working on the mern stack and i am intresed in the cyber security field as well as web development.
+      </p>
+      <a href="sandeepkumar.pdf" download style="padding: 10px 20px; background-color: #28a745; color: white; border-radius: 8px; text-decoration: none; margin-left: 10px;">📄 Download Resume</a>
+    </div>
+    <hr>
+    <section style="padding: 40px 20px; background-color: #f9f9f9;">
+  <h2 style="text-align: center;">Why Hire Me?</h2>
+  <div style="max-width: 800px; margin: auto; text-align: center;">
+    <p style="font-size: 18px; line-height: 1.6; color: #444;">
+      I'm a passionate and dedicated developer who blends creativity with logic to build impactful digital solutions. I specialize in responsive front-end development using modern JavaScript frameworks and also work on backend and cybersecurity solutions.
+    </p>
+    <p style="font-size: 18px; line-height: 1.6; color: #444;">
+      Whether you're looking to build a modern web app, a secure digital platform, or a responsive mobile interface — I'm ready to bring your ideas to life.
+    </p>
+    <p style="font-size: 18px; line-height: 1.6; color: #444;">
+      Let's collaborate and build something innovative together.
+    </p>
+    <button onclick="alert('Thanks for reaching out! I’ll contact you soon.')" style="margin-top: 20px; padding: 12px 24px; font-size: 16px; background-color: #007bff; color: white; border: none; border-radius: 8px;">Let's Work Together</button>
+  </div>
+</section>
+
+    <section id="contact">
+      
+      <div>
+        <h1>contact me</h1>
+        <form id="containers2" action="">
+          
+          <div id="n1">
+          <input type="text" placeholder="Enter your name">
+        </div>
+        <br>
+        <div>
+          <label id="m1">Gmail :</label>
+          <input type="email" placeholder="Example@gmail.com" required>
+        </div>
+        <br>
+
+        <label id="c1">comments :</label>
+        <textarea placeholder="Any Querys" required> </textarea>
+        <br>
+        <button onclick="lern">submit</button>
+
+      </form>
+
+    </div>
+  </section>
+  <br><br>
+  <hr>
+  <section id="about" style="background-color: #f9f9f9; padding: 40px 20px; font-family: Arial, sans-serif;">
+    <h2 style="text-align: center; color: #333;">About Me</h2>
+    <div style="max-width: 800px; margin: auto; text-align: center;">
+      <p style="font-size: 18px; line-height: 1.6; color: #555;">
+        Hello! I'm <strong>Sandeep Kumar</strong>, a passionate developer focused on building responsive websites and
+        smart solutions. I enjoy crafting full-stack web applications, working on mobile app interfaces, and integrating
+        smart features like biometric authentication and data security.
+      </p>
+      <p style="font-size: 18px; line-height: 1.6; color: #555;">
+        I’ve developed projects like <strong>Health Emergency Report System</strong> for quick emergency handling and
+        <strong>QCompare</strong>, an e-commerce platform for price comparison of electronic gadgets. I love
+        experimenting with new technologies like React Native, MongoDB, and cybersecurity tools to push my skills
+        further.
+      </p>
+      <p style="font-size: 18px; line-height: 1.6; color: #555;">
+        When I'm not coding, I explore new tech trends, contribute to open-source, and share my work on platforms like
+        GitHub and LinkedIn.
+      </p>
+    </div>
+  </section>
+
+
+  <footer>
+    <h1><span style="color:crimson">S</span>andeep</h1>
+
+    <ul>
+      <li class="container">
+        <a href="https://www.instagram.com/_hunter_s_o_u_l/">
+          <img class="img2" src="instagram.svg" alt="instagram">
+        </a>
+      </li>
+      <br>
+      <li class="container">
+        <a href="https://www.linkedin.com/in/sandeep-kumar-3352b829b">
+          <img class="img2" src="linkedin.svg" alt="linkedin">
+        </a>
+      </li>
+    </ul>
+    <div class="num">
+      <ul class="container1">
+        <li>
+          <a href="portfolio.html">Home</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="skills.html">Skills</a>
+        </li>
+      </ul>
+
+      <script>
+        function toggleTheme() {
+          document.body.classList.toggle('dark');
+        }
+      </script>
+
+      <style>
+        body.dark {
+          background-color: #121212;
+          color: white;
+        }
+
+        body.dark a {
+          color: #bb86fc;
+        }
+
+        body.dark header {
+          background-color: #1f1f1f;
+        }
+
+        body.dark .raw {
+          background-color: #2c2c2c;
+          color: #e0e0e0;
+        }
+
+        body.dark #myjob {
+          background-color: #444;
+          color: #e0e0e0;
+          box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+        }
+
+        body.dark #myjob:hover {
+          background-color: #666;
+        }
+
+        body.dark article {
+          color: #e0e0e0;
+        }
+
+        body.dark #par {
+          color: #e0e0e0;
+        }
+
+        body.dark section#contact {
+          background-color: #1e1e1e;
+          color: #e0e0e0;
+        }
+
+        body.dark section#about {
+          background-color: #1e1e1e;
+          color: #e0e0e0;
+        }
+
+        body.dark footer {
+          background-color: #1f1f1f;
+          color: #e0e0e0;
+        }
+
+        body.dark .container,
+        body.dark .container1 {
+          background-color: #2c2c2c;
+        }
+      </style>
+
+
+</body>
+
+</html>

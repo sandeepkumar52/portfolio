@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skills - Sandeep</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f8;
+            color: #333;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: aqua;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+        body {
+            padding-top: 60px;
+        }
+        
+        header a {
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 12px;
+        }
+        header a:hover {
+            background-color: cornflowerblue;
+            border-radius: 5px;
+            color: white;
+            transition: 0.3s;
+        }
+        h1#heading {
+            background: linear-gradient(to right, rgb(0, 52, 116), rgb(98, 142, 170));
+            color: aliceblue;
+            text-decoration: underline;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .level-section {
+            max-width: 700px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            padding: 20px 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .level-section h2 {
+            color: #204d74;
+            border-bottom: 2px solid #204d74;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .skill {
+            margin-bottom: 15px;
+        }
+        .skill-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .progress-bar {
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 18px;
+        }
+        .progress {
+            height: 100%;
+            border-radius: 10px;
+            background-color: #4caf50;
+            width: 0;
+            transition: width 1s ease-in-out;
+        }
+        .description {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span style="color:crimson">S</span>andeep</h1>
+        <a href="portfolio.html">Home</a>
+        <a href="portfolio.html#contact">Contact</a>
+        <a href="portfolio.html#about">About</a>
+        <a href="skills.html">Skills</a>
+    </header>
+
+    <h1 id="heading">Skills Progression</h1>
+
+    <div class="level-section" id="beginner">
+        <h2>Beginner</h2>
+        <p class="description">Starting with the basics of web development and programming languages.</p>
+        <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">Python</div>
+            <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+        </div>
+    </div>
+
+    <div class="level-section" id="intermediate">
+        <h2>Intermediate</h2>
+        <p class="description">Building on fundamentals with frameworks and more complex programming.</p>
+        <div class="skill">
+            <div class="skill-name">JavaScript</div>
+            <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">ReactJS</div>
+            <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">MySQL</div>
+            <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+        </div>
+    </div>
+
+    <div class="level-section" id="professional">
+        <h2>Professional</h2>
+        <p class="description">Advanced skills including security and full-stack development.</p>
+        <div class="skill">
+            <div class="skill-name">Penetration Testing</div>
+            <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">Java</div>
+            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">C++</div>
+            <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+        </div>
+    </div>
+</body>
+</html>

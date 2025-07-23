@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            background-color: aqua;
+            padding:10px 0;
+            padding: auto;
+            z-index: 1000;
+        }
+        body {
+            padding-top: 60px;
+        }
+        a{
+            color:black;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: inherit;
+            text-decoration: none;
+            text-align: center;
+        }
+        a:hover{
+            justify-content: space-between;
+            background-color: cornflowerblue;
+            border-radius:5px;
+            width:4em;
+            height: auto;
+            padding: 10px;
+            transition: 0.5s;
+        }
+        
+        body.dark {
+        background-color: #121212;
+        color: white;
+        }
+        body.dark a {
+        color: #bb86fc;
+        }
+        body.dark header {
+            background-color: #1f1f1f;
+        }
+        body.dark section#projects {
+            background-color: #1e1e1e;
+        }
+        body.dark section#projects div[style*="background-color: white"] {
+            background-color: #2c2c2c !important;
+            color: #e0e0e0;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+        }
+        body.dark h2, body.dark p, body.dark strong {
+            color: #e0e0e0;
+        }
+
+    </style>
+    <script>
+  function toggleTheme() {
+    document.body.classList.toggle('dark');
+  }
+</script>
+</head>
+<body>
+      <header>
+        <h1><span style="color:rgb(168, 62, 83)">S</span>andeep</h1>
+        <a href="portfolio.html">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <button onclick="toggleTheme()" style="position: fixed; top: 20px; right: 20px; margin-top: 25px;">🌓 </button>
+    </header>
+    <article>
+    <div class="container">
+        <section id="projects" style="padding: 60px 20px; background-color: #f0f8ff;">
+  <h2 style="text-align: center; font-size: 2.5em; color:#121212;">Projects</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-top: 40px;">
+    
+    <div style="background-color: white; padding: 20px; border-radius: 12px; width: 300px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <h2> Health Emergency Report App</h2>
+      <p>An app designed to store and transmit critical health data during emergencies. Includes real-time updates, biometric login, and hospital integration.</p>
+      <p><strong>Tech:</strong> React Native, MongoDB, Node.js</p>
+      <a href="https://github.com/sandeepkumar52/quickcare-profile" style="color: #007bff;">[Github]</a>
+    </div>
+
+
+    <div style="background-color: white; padding: 20px; border-radius: 12px; width: 300px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <h2> Cybersecurity Threat Detector</h2>
+      <p>AI-based system that detects and blocks phishing and malware in real-time. Uses custom-built intrusion detection models.</p>
+      <p><strong>Tech:</strong> Python, Scikit-learn, Flask</p>
+      <a href="https://github.com/sandeepkumar52/weblock-sentinels" style="color: #007bff;">[Github]</a>
+    </div>
+
+    <div style="background-color: white; padding: 20px; border-radius: 12px; width: 300px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <h2>  Portfolio (This Site)</h2>
+      <p>Built with HTML, CSS, JS for responsiveness. Includes animations, light/dark theme toggle, and form validation.</p>
+      <p><strong>Tech:</strong> HTML5, CSS3, JavaScript</p>
+      <a href="#" style="color: #007bff;">[Live Preview]</a>
+    </div>
+
+  </div>
+</section>
+
+    </div>
+    </article>
+</body>
+</html>

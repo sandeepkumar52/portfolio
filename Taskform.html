@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <style>
+        form{
+            text-align: center;
+            background-color: gainsboro;
+            border-radius: 30px;
+            padding:30px;
+            margin:40vh;
+            margin-top: 20vh;
+            
+            box-shadow:0 8px 100px rgb(0, 0, 0);
+        }
+        input{
+            width: 20vb;
+            height:30px;
+            border:none;
+            border-radius: 7px;
+            padding:4px;
+            text-align: center;
+        }
+        button{
+            width: 18vh;
+            height: 30px;
+            border-radius: 8px;
+            background-color: skyblue;
+            font-size:3vh;
+            color:aliceblue;
+            font-weight:300;
+        }
+        button:active{
+            background-color: burlywood;
+        }
+        button:hover{
+            background-color: darkgray;
+            cursor: pointer;
+        }
+        .error-message{
+            color:red;
+            font-size: 14px;
+        }
+        #toggle.form{
+            background-color: black;
+            color:aliceblue
+        }
+    </style>
+</head> 
+<body>
+    <script>
+    
+        const name=document.getElementById("name");
+        const pass=document.getElementById("pass");
+        const cnfpass=document.getElementById("cnf pass");
+        const mail=document.getElementById("mail");
+
+
+        const error_name =document.getElementById("usernameError");
+        const error_pass=document.getElementById("passError");
+        const error_cnf_pass=document.getElementById("cnf_pass");
+        const error_email=document.getElementById("EmailError");
+
+        name.addEventListerner("input",function(){
+            const username = name.value;
+      const startsWithUpper = /^[A-Z]/.test(username);
+      
+      if (username.length >= 8 && startsWithUpper) {
+        name.style.backgroundColor = 'lightgreen';
+        usernameError.textContent = '';
+      } else {
+        name.style.backgroundColor = 'lightcoral';
+        usernameError.textContent = 'Username must be at least 8 characters and start with uppercase';
+      }
+    });
+    function dark(){
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+    }
+    </script>
+   <div>
+    <button id="toggle" onsubmit="dark">toggle</button>
+   </div>
+    <form>
+        
+    <input type="text" placeholder="username" id="name">
+    <br>
+    <span id="usernameError" class="error-message"></span><br>
+   <br> <input type="password" id="pass"placeholder="password"><br>
+   <span id="passError" class="error-message"></span>
+    <br><input type="password" id="cnf_pass" placeholder="conformation password"><br>
+    <span id="passwordError" class="error-message"></span><br><br>
+
+    <input type="number" placeholder="Enter your number" id="number">
+
+    <br><br>
+    <input type="email" placeholder="email" id="mail">
+    <span id="EmailError" class="error-message"></span><br><br>
+    <br><br>
+    <button>submit</button>
+    </form>
+</body>
+</html>
